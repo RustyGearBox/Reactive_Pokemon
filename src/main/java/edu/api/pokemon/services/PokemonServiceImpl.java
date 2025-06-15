@@ -28,6 +28,8 @@ public class PokemonServiceImpl {
                     .defense(request.getDefense())
                     .specialDefense(request.getSpecialDefense())
                     .speed(request.getSpeed())
+                    .type1(request.getType1())
+                    .type2(request.getType2())
                     .build()
             ));
     }
@@ -47,6 +49,8 @@ public class PokemonServiceImpl {
                 pokemon.setDefense(request.getDefense());
                 pokemon.setSpecialDefense(request.getSpecialDefense());
                 pokemon.setSpeed(request.getSpeed());
+                pokemon.setType1(request.getType1());
+                pokemon.setType2(request.getType2());
                 return pokemonRepository.save(pokemon);
             });
     }

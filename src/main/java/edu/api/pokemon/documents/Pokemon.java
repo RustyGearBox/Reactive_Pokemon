@@ -3,6 +3,7 @@ package edu.api.pokemon.documents;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import edu.api.pokemon.enums.PokemonType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,5 +26,7 @@ public class Pokemon {
     private int defense;
     private int specialDefense;
     private int speed;
+    private PokemonType type1;
+    private PokemonType type2;
 
 }
