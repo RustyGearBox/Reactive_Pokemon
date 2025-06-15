@@ -1,0 +1,21 @@
+package edu.api.pokemon.documents.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+@AllArgsConstructor
+public class PokemonCreateRequest {
+    
+    private String name;
+    private int level;
+    private int health;
+    private int attack;
+    private int specialAttack;
+    private int defense;
+    private int specialDefense;
+    private int speed;
+
+}
